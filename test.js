@@ -36,8 +36,10 @@ test('should `prev` method be able to pass a string as number', function (done) 
     .use(plugin())
     .use(function () {
       return function (ch) {
-        if (ch === 'c') test.strictEqual(this.prev(1), '>')
-        if (ch === 'c') test.strictEqual(this.prev('3'), 'b')
+        if (ch === 'c') {
+          test.strictEqual(this.prev(1), '>')
+          test.strictEqual(this.prev('3'), 'b')
+        }
       }
     })
     .tokenize('ab >c.8')
@@ -50,8 +52,10 @@ test('should `next` method be able to pass a string as number', function (done) 
     .use(plugin())
     .use(function () {
       return function (ch) {
-        if (ch === 'a') test.strictEqual(this.next(1), '.')
-        if (ch === 'a') test.strictEqual(this.next('2'), '8')
+        if (ch === 'a') {
+          test.strictEqual(this.next(1), '.')
+          test.strictEqual(this.next('2'), '8')
+        }
       }
     })
     .tokenize('a.8')

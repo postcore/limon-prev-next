@@ -44,7 +44,7 @@ module.exports = function limonPrevNext () {
         return input[i - pos]
       }
       this.next = function next (pos) {
-        pos = isNumber(pos) ? Number(pos) : 1
+        pos = !isNumber(pos) ? 1 : Number(pos)
         return input[i + pos]
       }
     }
@@ -53,5 +53,5 @@ module.exports = function limonPrevNext () {
 
 function isNumber (val) {
   val = typeof val === 'string' ? val.trim() : val
-  return require('is-number')(val)
+  return require('is-number')(val) // eslint-disable-line
 }
