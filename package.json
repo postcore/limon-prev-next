@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "assertit": "^0.1.0",
-    "limon": "^0.1.0",
+    "limon": "^0.2.0",
     "pre-commit": "*"
   },
   "files": [
