@@ -37,7 +37,7 @@
  */
 
 module.exports = function limonPrevNext () {
-  return function prevNext (app) {
+  return function prevNext () {
     return function (ch, i, input) {
       this.prev = function prev (pos) {
         pos = isNumber(pos) ? Number(pos) : 1
