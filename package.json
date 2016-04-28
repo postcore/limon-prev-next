@@ -40,6 +40,12 @@
     "tasks": [
       "readme"
     ],
+    "related": {
+      "list": [
+        "limon",
+        "postjson"
+      ]
+    },
     "reflinks": [
       "limon"
     ],

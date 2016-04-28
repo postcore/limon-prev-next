@@ -42,6 +42,10 @@ limon
   .tokenize('abc.> qux')
 ```
 
+## Related
+* [limon](https://www.npmjs.com/package/limon): The pluggable JavaScript lexer on per character basis. | [homepage](https://github.com/limonjs/limon)
+* [postjson](https://www.npmjs.com/package/postjson): Transforming JSON with plugins. | [homepage](https://github.com/postjson/postjson)
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/limon-prev-next/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
@@ -50,7 +54,7 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
 
-[limon]: https://github.com/tunnckocore/limon
+[limon]: https://github.com/limonjs/limon
 
 [npmjs-url]: https://www.npmjs.com/package/limon-prev-next
 [npmjs-img]: https://img.shields.io/npm/v/limon-prev-next.svg?label=limon-prev-next
