@@ -47,7 +47,7 @@ limon
 * [postjson](https://www.npmjs.com/package/postjson): Transforming JSON with plugins. | [homepage](https://github.com/postjson/postjson)
 
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/limon-prev-next/issues/new).  
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/limonjs/limon-prev-next/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
 ## [Charlike Make Reagent](http://j.mp/1stW47C) [![new message to charlike][new-message-img]][new-message-url] [![freenode #charlike][freenode-img]][freenode-url]
@@ -59,20 +59,20 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [npmjs-url]: https://www.npmjs.com/package/limon-prev-next
 [npmjs-img]: https://img.shields.io/npm/v/limon-prev-next.svg?label=limon-prev-next
 
-[license-url]: https://github.com/tunnckoCore/limon-prev-next/blob/master/LICENSE
+[license-url]: https://github.com/limonjs/limon-prev-next/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
-[codeclimate-url]: https://codeclimate.com/github/tunnckoCore/limon-prev-next
-[codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/limon-prev-next.svg
+[codeclimate-url]: https://codeclimate.com/github/limonjs/limon-prev-next
+[codeclimate-img]: https://img.shields.io/codeclimate/github/limonjs/limon-prev-next.svg
 
-[travis-url]: https://travis-ci.org/tunnckoCore/limon-prev-next
-[travis-img]: https://img.shields.io/travis/tunnckoCore/limon-prev-next/master.svg
+[travis-url]: https://travis-ci.org/limonjs/limon-prev-next
+[travis-img]: https://img.shields.io/travis/limonjs/limon-prev-next/master.svg
 
-[coveralls-url]: https://coveralls.io/r/tunnckoCore/limon-prev-next
-[coveralls-img]: https://img.shields.io/coveralls/tunnckoCore/limon-prev-next.svg
+[coveralls-url]: https://coveralls.io/r/limonjs/limon-prev-next
+[coveralls-img]: https://img.shields.io/coveralls/limonjs/limon-prev-next.svg
 
-[david-url]: https://david-dm.org/tunnckoCore/limon-prev-next
-[david-img]: https://img.shields.io/david/tunnckoCore/limon-prev-next.svg
+[david-url]: https://david-dm.org/limonjs/limon-prev-next
+[david-img]: https://img.shields.io/david/limonjs/limon-prev-next.svg
 
 [standard-url]: https://github.com/feross/standard
 [standard-img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
