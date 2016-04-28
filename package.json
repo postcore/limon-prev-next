@@ -1,0 +1,50 @@
+{
+  "name": "limon-prev-next",
+  "version": "0.0.0",
+  "description": "Plugin for [limon][] pluggable lexer that adds `prev` and `next` methods.",
+  "repository": "tunnckoCore/limon-prev-next",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "is-number": "^2.1.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "limon": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "lexer",
+    "limon",
+    "limon-plugin",
+    "limon-prev-next",
+    "next",
+    "plugin",
+    "prev",
+    "prev-next",
+    "util",
+    "utils"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "reflinks": [
+      "limon"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}
