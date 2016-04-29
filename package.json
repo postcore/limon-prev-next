@@ -1,6 +1,6 @@
 {
   "name": "limon-prev-next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for [limon][] pluggable lexer that adds `prev` and `next` methods.",
   "repository": "limonjs/limon-prev-next",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
