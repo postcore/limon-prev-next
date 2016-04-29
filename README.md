@@ -16,7 +16,7 @@ npm i limon-prev-next --save
 const limonPrevNext = require('limon-prev-next')
 ```
 
-### [limonPrevNext](index.js#L39)
+### [limonPrevNext](index.js#L40)
 Plugin that adds `.prev` and `.next` methods, that are available in next plugins only.
 
 * `returns` **{Function}**: Which you should pass to [limon][]'s `.use` method.  

@@ -20,14 +20,17 @@ test('should add prev/next methods', function (done) {
       return function () {
         test.strictEqual(typeof this.prev, 'function')
         test.strictEqual(typeof this.next, 'function')
+        test.strictEqual(typeof this.step, 'function')
         test.strictEqual(typeof app.prev, 'function')
         test.strictEqual(typeof app.next, 'function')
+        test.strictEqual(typeof app.step, 'function')
       }
     })
     .tokenize('foo bar')
 
   test.strictEqual(typeof lexer.prev, 'undefined')
   test.strictEqual(typeof lexer.next, 'undefined')
+  test.strictEqual(typeof lexer.step, 'undefined')
   done()
 })
 
@@ -37,8 +40,22 @@ test('should `prev` method be able to pass a string as number', function (done) 
     .use(function () {
       return function (ch) {
         if (ch === 'c') {
+          test.strictEqual(this.prev(0), 'c')
+          test.strictEqual(this.step(0), 'c')
+
+          test.strictEqual(this.prev('0'), 'c')
+          test.strictEqual(this.step('0'), 'c')
+
+          test.strictEqual(this.prev(), '>')
+          test.strictEqual(this.step(-1), '>')
+
           test.strictEqual(this.prev(1), '>')
+          test.strictEqual(this.prev('1'), '>')
+          test.strictEqual(this.step('-1'), '>')
+
+          test.strictEqual(this.prev(3), 'b')
           test.strictEqual(this.prev('3'), 'b')
+          test.strictEqual(this.step('-3'), 'b')
         }
       }
     })
@@ -52,13 +69,26 @@ test('should `next` method be able to pass a string as number', function (done) 
     .use(plugin())
     .use(function () {
       return function (ch) {
-        if (ch === 'a') {
-          test.strictEqual(this.next(1), '.')
-          test.strictEqual(this.next('2'), '8')
+        if (ch === ' ') {
+          test.strictEqual(this.next(0), ' ')
+          test.strictEqual(this.step(0), ' ')
+
+          test.strictEqual(this.next('0'), ' ')
+          test.strictEqual(this.step('0'), ' ')
+
+          test.strictEqual(this.next(1), '>')
+          test.strictEqual(this.next('1'), '>')
+          test.strictEqual(this.step(1), '>')
+          test.strictEqual(this.step('1'), '>')
+
+          test.strictEqual(this.next(4), '8')
+          test.strictEqual(this.next('4'), '8')
+          test.strictEqual(this.step(4), '8')
+          test.strictEqual(this.step('4'), '8')
         }
       }
     })
-    .tokenize('a.8')
+    .tokenize('ab >c.8')
 
   done()
 })

@@ -32,6 +32,7 @@
  *   .tokenize('abc.> qux')
  * ```
  *
+ * @name   limonPrevNext
  * @return {Function} Which you should pass to [limon][]'s `.use` method.
  * @api public
  */
@@ -46,6 +47,9 @@ module.exports = function limonPrevNext () {
       this.next = function next (pos) {
         pos = !isNumber(pos) ? 1 : Number(pos)
         return input[i + pos]
+      }
+      this.step = function step (pos) {
+        return this.next(pos)
       }
     }
   }
